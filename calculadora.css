@@ -1,0 +1,48 @@
+.caixa {
+    background-color: lightgray;
+    width: 600px;
+    height: 700px;
+    border: 1px solid black;
+}
+#visor {
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    height: 70px;
+    border: 3px solid black;
+    font-weight: bolder;
+    font-size: 350%;
+}
+.teclas {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    margin: 30px;
+    padding: 20px;
+    height: 60%;
+    border: 3px solid black;
+}
+.tc_num {
+    width: 70%;
+    height: 100%;
+}
+.tc_num button {
+    width: 31%;
+    height: 25%;
+    font-weight: bolder;
+    font-size: 200%;
+    border-radius: 20px;
+}
+.tc_op {
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+.tc_op button {
+    width: 100%;
+    height: 20%;
+    font-weight: bolder;
+    font-size: 200%;
+    border-radius: 20px;
+}
