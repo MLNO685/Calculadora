@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="caixa">
+        <div id="visor">
+    </div>
+    <div class="teclas">
+        <div class="tc_num">
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <br>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <br>
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <br>
+            <button id="0">0</button>
+            <button id="ponto">.</button>
+            <button id="igual">=</button>
+        </div>
+        <div class="tc_op">
+            <button id="soma">+</button>
+            <button id="sub">-</button>
+            <button id="multi">*</button>
+            <button id="div">/</button>
+            <button id="limpar">LIMPAR</button>
+        </div>
+    </div>
+</div>
+    <script>
+        var botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function(botao) {
+            botao.addEventListener('click',function()  {
+                if (botao.id === "limpar") {
+                    visor.textContent = "";
+                }else if (botao.id === "igual") {
+                    visor.textContent = eval(visor.textContent);
+                }else {
+                    visor.textContent += botao.textContent
+                }
+            });
+        });
+    </script>
+</body>
+</html>
